@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Link Test</title>
+</head>
+<body>
+  <!-- The first part, document, refers to the <html> and <body> tags; links.linkname to the <a> tag; and href to the href attribute. -->
+  <a id="mylink" href="http://mysite.com">Click me</a><br>
+  <script>
+    // url = document.links.mylink.href // not compatible with MS browser
+    // url = mylink.href //short form
+    url = document.getElementByID('mylink').href
+
+    document.write('The URL is ' + url)
+    The Document Object Model | 325
+  </script>
+</body>
+</html>
